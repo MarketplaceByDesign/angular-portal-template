@@ -23,6 +23,6 @@ export const siteConfig: SiteConfig = {
 };
 
 export const pricingConfig: PricingFormConfig = {
-    enablePricingForm: false,
-    enableMultiPricingForms: false,
+    enablePricingForm: true,
+    enableMultiPricingForms: true,
 };
