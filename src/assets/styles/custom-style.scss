@@ -1,0 +1,45 @@
+@import "mixins";
+@import "custom-mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+$font-inter:'Inter',sans-serif;
+
+body {
+
+    .eshop,
+    .modal-dialog {
+        font-family: $font-inter;
+        font-weight: normal;
+        font-size: 16px;
+        font-weight: 400;
+        word-break: break-word;
+        line-height: 24px;
+
+        * {
+            font-family: $font-inter;
+            font-weight: 400;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $font-inter;
+            font-weight: 600;
+        }
+
+        .container {
+            @media (min-width: 1200px) {
+                max-width: 1140px;
+            }
+        }
+
+        .main-content-section {
+            min-height: 100vh;
+        }
+    }
+
+    
+}

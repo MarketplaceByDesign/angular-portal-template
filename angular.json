@@ -34,7 +34,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/ngx-toastr/toastr.css"
+              "node_modules/ngx-toastr/toastr.css",
+              "src/assets/styles/custom-theme.scss",
+              "src/assets/styles/custom-style.scss"
             ],
             "scripts": [
               "node_modules/tinymce/tinymce.min.js"

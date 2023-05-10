@@ -51,12 +51,12 @@ describe('AppComponent', () => {
         const config = {
             ...siteConfig,
         };
-        config.title = 'App Directory';
+        config.title = 'Product Directory';
         config.favicon.href = 'assets/img/favicon.png';
 
         const mockedResult = {
-            siteTitle: 'App Directory',
-            siteFaviconHref: 'App Directory',
+            siteTitle: 'Product Directory',
+            siteFaviconHref: 'Product Directory',
         };
 
         jest.spyOn(authenticationService, 'tryLoginByRefreshToken');

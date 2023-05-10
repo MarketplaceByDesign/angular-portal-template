@@ -9,7 +9,12 @@
     min-height: 100vh;
     background-color: #f4f7fc;
 }
-
+.home__hero{
+    background-image: url(assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 400px;
+}
 .bg-container.bg-s {
     min-height: 100%;
 }

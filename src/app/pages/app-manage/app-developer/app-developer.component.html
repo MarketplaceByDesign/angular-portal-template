@@ -1,7 +1,7 @@
 <div class="bg-container height-unset">
     <app-page-title
-        pageTitle="Manage apps"
-        buttonText="Create app"
+        pageTitle="Manage Product"
+        buttonText="Create Product"
         (buttonClick)="router.navigate(['/manage-apps/create'])"></app-page-title>
 </div>
 <div class="container">
@@ -10,7 +10,7 @@
     </div>
     <div class="pb-2">
         <oc-app-table
-            noAppMessage="No apps in your list"
+            noAppMessage="No Product in your list"
             [properties]="appListConfig"
             menuUrl="../../../../assets/img/dots-hr-icon.svg"
             defaultAppIcon="../../../../assets/img/app-icon1.svg"

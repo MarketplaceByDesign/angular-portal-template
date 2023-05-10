@@ -56,7 +56,7 @@ export class AppNewComponent implements OnInit, OnDestroy {
     submitInProcess = false;
     currentStep = 1;
 
-    pageTitle: 'Create app' | 'Edit app';
+    pageTitle: 'Create Product' | 'Edit Product';
     pageType: pageDestination;
     appId: string;
     appVersion: number;
@@ -569,11 +569,11 @@ export class AppNewComponent implements OnInit, OnDestroy {
         return false;
     }
 
-    private getPageTitleByPage(currentPage: string): 'Create app' | 'Edit app' {
+    private getPageTitleByPage(currentPage: string): 'Create Product' | 'Edit Product' {
         if (currentPage === 'create') {
-            return 'Create app';
+            return 'Create Product';
         }
-        return 'Edit app';
+        return 'Edit Product';
     }
 
     private checkDataValidityRedirect(): void {

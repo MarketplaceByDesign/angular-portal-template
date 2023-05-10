@@ -42,11 +42,11 @@ describe('HomeComponent', () => {
         const router = TestBed.inject(Router);
         const cmsService = TestBed.inject(CmsContentService);
         const mockedResult = {
-            pageInfoTitle: 'Your App Directory',
-            pageInfoSubtext: 'A default design template for implementing your app directory with OpenChannel',
-            bottomCalloutHeader: 'List your app in our app directory',
-            bottomCalloutDescription: 'Register as an app developer and submit your app easily with our Developer Portal',
-            bottomCalloutButtonText: 'Get started as an app developer',
+            pageInfoTitle: 'Your Product Directory',
+            pageInfoSubtext: 'A default design template for implementing your Product directory with OpenChannel',
+            bottomCalloutHeader: 'List your Product in our Product directory',
+            bottomCalloutDescription: 'Register as an Product developer and submit your app easily with our Developer Portal',
+            bottomCalloutButtonText: 'Get started as an Product developer',
             bottomCalloutButtonLocation: '',
             bottomCalloutImageURL: 'assets/img/get-started.svg',
         };

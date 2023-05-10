@@ -1,0 +1,88 @@
+/*  Mixin Name -  mixin-placeholder 
+    Description:- To add the placeholder for all cross-browsers
+    Usecase for mixin-placeholder
+    Eg:- 
+    input, 
+    textarea { 
+        @include mixin-placeholder {
+            color: #333333;
+        }
+    }
+
+*/
+@mixin mixin-placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+/* =========================================================================================================== */
+/*  Mixin Name -  mixin-truncate 
+    Description:- To truncate the content in just one line or more then one line
+    Usecase for mixin-truncate
+    Note:- Default line-clamp is 1
+    Eg:- For one line
+    .demopara
+    {
+        @include mixin-truncate();
+    }
+
+    Eg:- For 2 lines
+    .demopara
+    {
+        @include mixin-truncate(2);
+    }
+
+*/
+@mixin mixin-truncate($mixvar-numlines: 1) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @supports (-webkit-line-clamp: $mixvar-numlines) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: $mixvar-numlines;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* =========================================================================================================== */
+
+/*  Mixin Name -  mixin-simplegrid 
+    Description:- To add the grid layout for example displaying like gallery-list
+    Usecase for mixin-simplegrid 
+    Variables Details:- 
+        $mixvar-cols - No. of columns you need in your grid
+        $mixvar-rows - No. of rows you need in your grid
+        $mixvar-colgap - Sets the gap between the columns
+        $mixvar-rowgap -  Sets the gap between the rows
+    Eg:- 
+    demogallerylist
+    {
+        @include mixin-simplegrid(3,1,15px,15px);
+    }
+
+*/
+@mixin mixin-simplegrid($mixvar-cols, $mixvar-rows, $mixvar-colgap, $mixvar-rowgap) {
+    display: grid;
+    grid-template-columns: repeat($mixvar-cols, 1fr);
+    grid-template-rows: $mixvar-rows;
+    grid-column-gap: $mixvar-colgap;
+    grid-row-gap: $mixvar-rowgap;
+}
+/* =========================================================================================================== */

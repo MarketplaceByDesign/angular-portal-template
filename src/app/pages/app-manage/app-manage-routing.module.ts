@@ -13,7 +13,7 @@ const routes: Routes = [
                 path: '',
                 component: AppDeveloperComponent,
                 canActivate: [AuthGuard],
-                data: { title: 'Manage apps' },
+                data: { title: 'Manage Product' },
             },
             {
                 path: 'create',
