@@ -145,7 +145,7 @@ export class AppChartComponent implements OnInit, OnDestroy {
         // open loading bar
         this.loader$.apps.start();
 
-        const defaultItem = { id: null, label: 'All apps' };
+        const defaultItem = { id: null, label: 'All Products' };
         // init default dropdown value
         this.chartData.apps = {
             activeItem: defaultItem,

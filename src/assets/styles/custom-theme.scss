@@ -1,2 +1,19 @@
 @import "mixins";
 @import "custom-mixins.scss";
+
+$primary: #f4f7fc;
+.navbar {
+    background-color: $primary;
+}
+
+app-login,
+app-signup,
+app-activation,
+app-invited-signup,
+app-resend-activation,
+app-reset-password,
+app-forgot-password {
+    .bg-container {
+        background-color: #286ee2;
+    }
+}

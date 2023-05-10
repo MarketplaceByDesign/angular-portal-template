@@ -14,6 +14,9 @@
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 400px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 .bg-container.bg-s {
     min-height: 100%;
